@@ -1,0 +1,20 @@
+main: me.herku.aircurrency.AirCurrencyPlugin
+name: AirCurrency
+version: 1.0
+api-version: 1.20
+Author: herku20
+
+depend: [Vault]
+softdepend: [Economy]
+
+commands:
+  aircurrency:
+    description: Main command for AirCurrency plugin.
+    usage: /aircurrency <set|remove|removeall|confirm|prefix> [args...]
+    aliases: [ac]
+
+permissions:
+  aircurrency.commands.admin:
+    description: Allows full access to all AirCurrency administration commands (set, remove, removeall, confirm, prefix).
+    default: op .
+
